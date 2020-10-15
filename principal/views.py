@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
+
 from .forms import RegistroPacientes
 from .models import Pacientes
 # Create your views here.
@@ -28,15 +30,18 @@ def usuario(request):
 def pagina_registrarse(request):
 
     formulario_registro = RegistroPacientes()
+
     if request.method == 'POST':
         formulario_registro = RegistroPacientes(request.POST)
-
         if formulario_registro.is_valid():
             try:  
-                formulario_registro.save()  
-                return redirect('usuario')  
-            except:  
-                pass  
+                formulario_registro.save()
+                messages.success(request, 'Te has registrado Correctamente') 
+                return redirect('index')  
+            except Exception as ex:  
+                print(ex)
+        else:
+            messages.success(request, 'No se efectuo el registro')
     else:  
         formulario_registro = RegistroPacientes()
 
