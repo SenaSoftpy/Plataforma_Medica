@@ -1,11 +1,13 @@
-{% extends 'layout.html' %}
-
+{% extends 'layout/layout.html' %}
+{% block titulo %}Crear Aprendiz{% endblock titulo%}
+{% block body%}
+    
 <div class="slider">
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="{% static 'images/salud1.jpeg' %}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="..." class="d-block w-100" alt="...">
@@ -25,3 +27,5 @@
       </div>
 
 </div>
+
+{%endblock%}
