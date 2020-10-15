@@ -1,0 +1,15 @@
+body{
+    background: url('../images/medico.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.formulario{
+    width: 70%;
+    margin: auto;
+    margin-top: 25vh;
+}
+
+.boton-registrar{
+    display: block;
+    margin: auto;
+}
