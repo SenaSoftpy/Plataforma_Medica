@@ -4,5 +4,13 @@ body{
 }
 
 .carousel {
-   padding: 5%! important; 
+   padding: 3%! important; 
+  }
+
+  .navbar #imglogo{
+    margin-left: 180%! important;
+  }
+
+  .footer{
+      background-color: black;
   }
