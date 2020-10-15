@@ -1,6 +1,6 @@
 # importamos formularios
 from django import forms 
-from principal.models import Pacientes
+from principal.models import Pacientes, Reportes
 
 class RegistroPacientes(forms.ModelForm):
     class Meta:
@@ -36,4 +36,20 @@ class RegistroPacientes(forms.ModelForm):
             'clave_paciente': forms.PasswordInput(attrs={
                 'placeholder': 'Contraseña',
                 'class': 'form-control text-center mb-4', }),
+        }
+
+class RegistroReportes(forms.ModelForm):
+    class Meta:
+        model = Reportes
+        fields = ['descripcion_reporte', 'paciente', 'medico']
+        widgets = {
+            'descripcion_reporte': forms.Textarea(attrs={
+                'placeholder': 'Descripcion',
+                'class': 'form-control text-center mb-4', }),
+            'paciente': forms.HiddenInput(attrs={
+                'value': 1
+            }),
+            'medico': forms.HiddenInput(attrs={
+                'value': 1
+            })
         }

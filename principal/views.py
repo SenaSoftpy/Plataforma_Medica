@@ -4,8 +4,8 @@ from django.contrib.auth import authenticate, login, logout #  son necesarios pa
 from django.contrib.auth.forms import AuthenticationForm
 
 
-from .forms import RegistroPacientes
-from .models import Pacientes
+from .forms import RegistroPacientes, RegistroReportes
+from .models import Pacientes, Reportes
 # Create your views here.
 
 def inicio(request):
@@ -25,8 +25,24 @@ def medico(request):
 
 def usuario(request):
 
+    formulario_reporte = RegistroReportes()
+
+    if request.method == 'POST':
+        formulario_reporte = RegistroReportes(request.POST)
+        if formulario_reporte.is_valid():
+            try:
+                formulario_reporte.save()
+                messages.success(request, 'Sintomas reportados') 
+                return redirect('usuario')
+            except Exception as ex:
+                print(ex)
+        else:
+            messages.success(request, "Error al reportar")
+    else:
+        formulario_reporte = RegistroReportes()
+
     context = {
-        'titulo': 'Usuario'
+        'titulo': 'Usuario', 'formulario_reporte':formulario_reporte
     }
     return render(request, 'usuario/usuario.html', context)
  

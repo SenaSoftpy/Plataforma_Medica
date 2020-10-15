@@ -62,3 +62,12 @@ body{
 .user-img img{
   width: 50%;
 }
+
+.boton-guardar{
+  width: 10%;
+  margin: auto;
+}
+
+.boton-g{
+  width: 100%;
+}
