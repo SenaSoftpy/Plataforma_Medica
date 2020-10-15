@@ -1,5 +1,5 @@
 {% extends 'layout/layout.html' %}
-{% block titulo %} Inicio {% endblock titulo%}
+{% block titulo %} {{ titulo }} {% endblock titulo%}
 {% block body%}
     {% load static %}
         
@@ -38,31 +38,64 @@
     <div class="cards">
 
         <div class="card-group">
-  <div class="card">
-    <img src="{% static 'images/cards1.jpg' %}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Prevención virus SARS</h5>
-      <p class="card-text">Alguans reocmendaciones para mitigar el contagio del nuevo virtus SARS - 19</p>
-      <p class="card-text"><small class="text-muted"></small></p>
+            <div class="card">
+                <img src="{% static 'images/cards1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Prevención virus SARS</h5>
+                    <p class="card-text">Alguans reocmendaciones para mitigar el contagio del nuevo virtus SARS - 19</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+          </div>
+         <div class="card">
+             <img src="{% static 'images/imagencard2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cuidados en el estilo de vida</h5>
+                    <p class="card-text">Algunas recomendaciones para mejorar los hábitos alimenticios</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="{% static 'images/imagencard3.jpg' %}" class="card-img-top" alt="...">
+             <div class="card-body">
+                 <h5 class="card-title">Consultas con especialistas</h5>
+                 <p class="card-text">Conozca las especialidades que pueden ser tratadas en este hospital.</p>
+                 <p class="card-text"><small class="text-muted"></small></p>
+             </div>
+          </div>
+       </div>
+    
     </div>
-  </div>
-  <div class="card">
-    <img src="{% static 'images/imagencard2.jpg' %}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Cuidados en el estilo de vida</h5>
-      <p class="card-text">Algunas recomendaciones para mejorar los hábitos alimenticios</p>
-      <p class="card-text"><small class="text-muted"></small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="{% static 'images/imagencard3.jpg' %}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Consultas con especialistas</h5>
-      <p class="card-text">Conozca las especialidades que pueden ser tratadas en este hospital.</p>
-      <p class="card-text"><small class="text-muted"></small></p>
-    </div>
-  </div>
-</div>
+
+    
+    <div class="content" id="servicios">
+        <p><h1>NUESTROS SERVICIOS</h1></P>
+        <div class="card-deck">
+            <div class="card">
+                <img src="{% static 'images/barrazul.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Grupo familiar</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/barrazul.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Consulta historia clínica</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/barrazul.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Consulta de autorizaciones y ordenes</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
     </div>
   
-{%endblock%}
+
+{% endblock %}

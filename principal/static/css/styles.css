@@ -16,5 +16,44 @@ body{
   }
 
   .cards{
-    padding: 10%! important; 
+    padding: 6%! important; 
+ 
   }
+
+  .content{
+      
+    padding: 5%! important; 
+  }
+
+  h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 2%! important; 
+    font-family: 'PT Serif', serif;
+  }
+
+  h5{
+    font-size: 20PX;
+    text-align: center;
+    padding: 2%! important; 
+    font-family: 'PT Serif', serif;
+  }
+
+<<<<<<< HEAD
+  .formulario{
+    padding: 6%! important; 
+  }
+
+  div.w-33 {
+    width: 100%;
+    background-color:#EBF5FB ;
+  }
+  
+  div.center {
+    text-align: center;
+  }
+=======
+.user-img img{
+  width: 50%;
+}
+>>>>>>> 49c24736704269db8bb98ea16c0442d7e0f543ad
