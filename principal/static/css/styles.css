@@ -26,7 +26,28 @@ body{
   }
 
   h1{
-    font-size: 40PX;
+    font-size: 40px;
     text-align: center;
     padding: 2%! important; 
+    font-family: 'PT Serif', serif;
+  }
+
+  h5{
+    font-size: 20PX;
+    text-align: center;
+    padding: 2%! important; 
+    font-family: 'PT Serif', serif;
+  }
+
+  .formulario{
+    padding: 6%! important; 
+  }
+
+  div.w-33 {
+    width: 100%;
+    background-color:#EBF5FB ;
+  }
+  
+  div.center {
+    text-align: center;
   }

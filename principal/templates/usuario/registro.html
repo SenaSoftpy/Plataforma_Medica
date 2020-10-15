@@ -1,9 +1,12 @@
 {% extends 'layout/layout.html' %}
-{% block titulo %} Inicio {% endblock titulo%}
+{% block titulo %} {{ titulo }} {% endblock titulo%}
 {% block body%}
     {% load static %}
 
     <form class="formulario" method="POST" action="">
+
+        <p><h5>Para iniciar el registro del paciente complete los campos del formulario que se presenta a continuación: <br></h5><br>
+         </p>
         {% csrf_token %}
 
         {% comment %} <div class="justify-content-center">
@@ -19,8 +22,12 @@
                 </div>
             </div>
         {% endfor %}
-
-        <button class="btn btn-primary col-4 boton-registrar" type="submit">Registrar</button>
+        <div class="w-33">
+            <div class="center">
+                <button class="btn btn-primary col-4 boton-registrar" type="submit" style="center">Registrar</button>
+         </div>
+        </div>
+        
     </form>
 
 {% endblock %}
