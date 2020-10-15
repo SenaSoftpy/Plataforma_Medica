@@ -38,6 +38,6 @@ class Reportes(models.Model):
 class HistoriaMedica(models.Model):
     paciente = models.ForeignKey(Pacientes, null=False, on_delete=models.CASCADE)
     medico = models.ForeignKey(Medicos, null=False, on_delete=models.CASCADE)
-    fecha_creacion = models.DateTimeField(null=True)
-    fecha_actualizacion = models.DateTimeField(auto_now_add=True, null=False)
+    fecha_creacion = models.DateTimeField(auto_now_add=True, null=True)
+    fecha_actualizacion = models.DateTimeField(auto_now=True, null=False)
     descripcion = models.CharField(max_length=2000, null=False)
