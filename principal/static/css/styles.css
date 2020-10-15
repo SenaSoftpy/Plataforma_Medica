@@ -62,3 +62,7 @@ body{
 .user-img img{
   width: 50%;
 }
+
+.medico{
+    padding: 10%! important;
+}
