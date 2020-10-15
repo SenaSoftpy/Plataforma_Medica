@@ -6,10 +6,12 @@
 <div class="modal-dialog text-center">
     <div class="col-sm-8 main-section">
         <div class="modal-content">
-            <div class="col-12 user-img">
+            <div class="col-12 user-img mt-4 mb-4">
                 <img src="{% static '/images/medico2.png' %}" />
             </div>
-            <form class="col-12" method="POST">
+            <form class="col-12" method="POST" action="" >
+                {% csrf_token %}
+
                 <div class="form-group" id="user-group">
                     <input type="text" class="form-control" placeholder="Usuario" name="usuario" />
                 </div>
@@ -18,11 +20,10 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Ingresar</button>
             </form>
-            <div class="col-12 forgot">
+            <div class="col-12 forgot mt-2">
                 <a href="#">Recuperar Contraseña</a>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
