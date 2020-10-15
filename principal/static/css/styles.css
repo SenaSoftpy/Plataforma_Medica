@@ -1,5 +1,5 @@
 body{
-    background-color: #EBF5FB ;
+    background-color: #f6f5f5;
     font-family: 'PT Serif', serif;
 }
 
@@ -9,10 +9,6 @@ body{
 
   .navbar #imglogo{
     margin-left: 180%! important;
-  }
-
-  .footer{
-      background-color: black;
   }
 
   .cards{
@@ -39,21 +35,27 @@ body{
     font-family: 'PT Serif', serif;
   }
 
-<<<<<<< HEAD
   .formulario{
-    padding: 6%! important; 
+    padding: 0% 4%! important; 
   }
 
   div.w-33 {
     width: 100%;
     background-color:#EBF5FB ;
+    padding: 5%! important; 
   }
   
   div.center {
     text-align: center;
   }
-=======
-.user-img img{
-  width: 50%;
-}
->>>>>>> 49c24736704269db8bb98ea16c0442d7e0f543ad
+
+  .nav-menu{
+      padding:4%;
+      background-color: #54B3B6;
+  }
+
+  .nav-item{
+    text-decoration: none;
+  }
+
+
