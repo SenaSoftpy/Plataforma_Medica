@@ -77,18 +77,24 @@ def inicio_sesion(request):
     }
     return render(request, 'usuario/inicio_sesion.html', context)
 
-def cerrar_sesion():
+def cerrar_sesion(request):
 
     return HttpResponse("<h2>Has Cerrado Sesión<h2>")
 
 def cambio_medico(request):
-
-    return render(request, 'cambioMedico.html')
+    context = {
+        'title': 'Cambio de Médico'
+    }
+    return render(request, 'usuario/cambioMedico.html', context)
     
 def historia_clinica(request):
-
-    return render (request, 'historiaClin.html')
+    context = {
+        'title': 'Historia Clínica'
+    }
+    return render(request, 'usuario/historiaClin.html', context)
 
 def grupo_familiar(request):
-
-    return render(request, 'solicitud_grupoFam.html')
+    context = {
+        'title': 'Solicitud Grupo Familiar'
+    }
+    return render(request, 'usuario/solicitud_grupoFam.html', context)
