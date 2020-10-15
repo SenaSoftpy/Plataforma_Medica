@@ -37,13 +37,32 @@
 
     <div class="cards">
 
-    <div class="card" style="width: 22rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+        <div class="card-group">
+  <div class="card">
+    <img src="{% static 'images/cards1.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Prevención virus SARS</h5>
+      <p class="card-text">Alguans reocmendaciones para mitigar el contagio del nuevo virtus SARS - 19</p>
+      <p class="card-text"><small class="text-muted"></small></p>
     </div>
-
+  </div>
+  <div class="card">
+    <img src="{% static 'images/imagencard2.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cuidados en el estilo de vida</h5>
+      <p class="card-text">Algunas recomendaciones para mejorar los hábitos alimenticios</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/imagencard3.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Consultas con especialistas</h5>
+      <p class="card-text">Conozca las especialidades que pueden ser tratadas en este hospital.</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div>
     </div>
   
 {%endblock%}

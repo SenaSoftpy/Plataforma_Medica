@@ -14,3 +14,7 @@ body{
   .footer{
       background-color: black;
   }
+
+  .cards{
+    padding: 10%! important; 
+  }
