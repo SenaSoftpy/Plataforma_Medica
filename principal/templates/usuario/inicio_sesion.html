@@ -1,0 +1,28 @@
+{% extends 'layout/layout.html' %}
+{% block titulo %} Inicio {% endblock titulo%}
+{% block body%}
+{% load static %}
+
+<div class="modal-dialog text-center">
+    <div class="col-sm-8 main-section">
+        <div class="modal-content">
+            <div class="col-12 user-img">
+                <img src="{% static '/images/medico2.png' %}" />
+            </div>
+            <form class="col-12" method="POST">
+                <div class="form-group" id="user-group">
+                    <input type="text" class="form-control" placeholder="Usuario" name="usuario" />
+                </div>
+                <div class="form-group" id="contrasena-group">
+                    <input type="password" class="form-control" placeholder="Contraseña" name="clave" />
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+            <div class="col-12 forgot">
+                <a href="#">Recuperar Contraseña</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

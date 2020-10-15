@@ -39,6 +39,7 @@ body{
     font-family: 'PT Serif', serif;
   }
 
+<<<<<<< HEAD
   .formulario{
     padding: 6%! important; 
   }
@@ -51,3 +52,8 @@ body{
   div.center {
     text-align: center;
   }
+=======
+.user-img img{
+  width: 50%;
+}
+>>>>>>> 49c24736704269db8bb98ea16c0442d7e0f543ad
