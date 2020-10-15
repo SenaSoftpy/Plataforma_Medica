@@ -8,4 +8,7 @@ urlpatterns = [
     path('inicio-usuario/', views.usuario, name='usuario'),
     path('registro/', views.pagina_registrarse, name= 'registro'),
     path('iniciar-sesion/', views.inicio_sesion, name="inicio"),
+    path('cambiar-medico/', views.cambio_medico, name="cambioMedico"),
+    path('historia-clinica/', views.historia_clinica, name="historiaClinica"),
+    path('solicitud-familiar/', views.grupo_familiar, name="grupoFamiliar"),
 ]

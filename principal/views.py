@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout #  son necesarios para el inicio de sesion
 from django.contrib.auth.forms import AuthenticationForm
@@ -92,3 +92,25 @@ def inicio_sesion(request):
         'title': 'Iniciar Sesión'
     }
     return render(request, 'usuario/inicio_sesion.html', context)
+
+def cerrar_sesion(request):
+
+    return HttpResponse("<h2>Has Cerrado Sesión<h2>")
+
+def cambio_medico(request):
+    context = {
+        'title': 'Cambio de Médico'
+    }
+    return render(request, 'usuario/cambioMedico.html', context)
+    
+def historia_clinica(request):
+    context = {
+        'title': 'Historia Clínica'
+    }
+    return render(request, 'usuario/historiaClin.html', context)
+
+def grupo_familiar(request):
+    context = {
+        'title': 'Solicitud Grupo Familiar'
+    }
+    return render(request, 'usuario/solicitud_grupoFam.html', context)

@@ -1,0 +1,8 @@
+{% extends 'layout/layout.html' %}
+{% block titulo %} {{ title }} {% endblock %}
+{% block body%}
+    {% load static %}
+
+    <img src="{% static 'images/family.jpg' %}" class="card-img-top" alt="...">
+
+{% endblock %}
