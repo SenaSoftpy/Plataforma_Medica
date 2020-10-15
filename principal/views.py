@@ -45,3 +45,6 @@ def pagina_registrarse(request):
         'formulario_registro': formulario_registro
     }  
     return render(request,'usuario/registro.html',context)  
+
+def inicio_sesion(request):
+    return render(request, 'usuario/inicio_sesion.html')

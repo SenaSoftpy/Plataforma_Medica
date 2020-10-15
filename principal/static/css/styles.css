@@ -30,3 +30,7 @@ body{
     text-align: center;
     padding: 2%! important; 
   }
+
+.user-img img{
+  width: 50%;
+}
